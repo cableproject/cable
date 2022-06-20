@@ -5,29 +5,37 @@ The source code of Cable consists two parts. One is the Free5GC-Cable. We have m
 The other part of Cable is BPF-Cable. The BPF-Cable consists of the packet QoS processing in kernel, packet kernel bypassing and UPF kernel monitor. To use BPF-Cable you need to follow the steps:
 
 1. Download the Linux 5.4 kernel source code form
+
 https://github.com/torvalds/linux/tree/v5.4
 
 2. Put the code in BPF-Cable to the kernel source code.
+
 cp ./BPF-Cable/*  ./linux/samples/bpf
 
 3. Enter the linux code directory.
+
 cd ./linux/
 
 4. Compile.
+
 make M=samples/bpf
 
 5. Load and Run.
 
 Load the XDP:
+
 ip link set dev ens1f0 xdp obj upf_kern.o sec xdp verbose
 
 Load the tc and QoS:
+
 tc  filter add dev ens1f1 egress bpf da obj qos_kern.o sec qos verbose
 
 Check the index of the ens1f1:
+
 ip link | grep ens1f1
 
 If the index is 4, then run:
+
 ./qos -i 4
 
 
