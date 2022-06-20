@@ -1,0 +1,4 @@
+time="2021-05-30T03:18:29Z" level=info msg="set log level : info" category=MonDB component=LIB
+time="2021-05-30T03:18:29Z" level=info msg="set report call : false" category=MonDB component=LIB
+time="2021-05-30T03:18:36Z" level=info msg="set log level : info" category=MonDB component=LIB
+time="2021-05-30T03:18:36Z" level=info msg="set report call : false" category=MonDB component=LIB

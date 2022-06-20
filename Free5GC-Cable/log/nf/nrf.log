@@ -1,0 +1,14 @@
+time="2021-05-30T03:18:29Z" level=info msg="NRF version:  \n\tfree5GC version: v3.0.5\n\tbuild time:      2021-05-30T03:17:50Z\n\tcommit hash:     386a6bdd\n\tcommit time:     2021-01-30T15:57:26Z\n\tgo version:      go1.14.4 linux/amd64" category=App component=NRF
+time="2021-05-30T03:18:29Z" level=info msg="NRF Log level is set to [info] level" category=Init component=NRF
+time="2021-05-30T03:18:29Z" level=info msg="config version [1.0.0]" category=CFG component=NRF
+time="2021-05-30T03:18:29Z" level=info msg="Server started" category=Init component=NRF
+time="2021-05-30T03:18:29Z" level=info msg="nrfconfig Info: Version[1.0.0] Description[NRF initial local configuration]" category=Init component=NRF
+time="2021-05-30T03:18:29Z" level=info msg="Binding addr: [127.0.0.10:8000]" category=Init component=NRF
+time="2021-05-30T03:18:34Z" level=info msg="Terminating NRF..." category=Init component=NRF
+time="2021-05-30T03:18:34Z" level=info msg="NRF terminated" category=Init component=NRF
+time="2021-05-30T03:18:36Z" level=info msg="NRF version:  \n\tfree5GC version: v3.0.5\n\tbuild time:      2021-05-30T03:17:50Z\n\tcommit hash:     386a6bdd\n\tcommit time:     2021-01-30T15:57:26Z\n\tgo version:      go1.14.4 linux/amd64" category=App component=NRF
+time="2021-05-30T03:18:36Z" level=info msg="NRF Log level is set to [info] level" category=Init component=NRF
+time="2021-05-30T03:18:36Z" level=info msg="config version [1.0.0]" category=CFG component=NRF
+time="2021-05-30T03:18:36Z" level=info msg="Server started" category=Init component=NRF
+time="2021-05-30T03:18:36Z" level=info msg="nrfconfig Info: Version[1.0.0] Description[NRF initial local configuration]" category=Init component=NRF
+time="2021-05-30T03:18:36Z" level=info msg="Binding addr: [127.0.0.10:8000]" category=Init component=NRF
