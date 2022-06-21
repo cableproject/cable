@@ -8,33 +8,40 @@ The other part of Cable is BPF-Cable. The BPF-Cable consists of the packet QoS p
 
 2 Put the code in BPF-Cable to the kernel source code:
 
+```sh
 cp ./BPF-Cable/*  ./linux/samples/bpf
+```
 
 3 Enter the linux code directory:
 
+```sh
 cd ./linux/
+```
 
 4 Compile:
 
+```sh
 make M=samples/bpf
+```
 
 5 Load and Run
 
-5.1 Load the XDP:
+5.1 Load the tc and QoS:
 
-ip link set dev ens1f0 xdp obj upf_kern.o sec xdp verbose
-
-5.2 Load the tc and QoS:
-
+```sh
 tc  filter add dev ens1f1 egress bpf da obj qos_kern.o sec qos verbose
+```
 
-5.3 Check the index of the ens1f1:
+5.2 Check the index of the ens1f1:
 
+```sh
 ip link | grep ens1f1
+```
 
-5.4 If the index is 4, then run:
+5.3 If the index is 4, then run:
 
+```sh
 ./qos -i 4
-
+```
 
 
